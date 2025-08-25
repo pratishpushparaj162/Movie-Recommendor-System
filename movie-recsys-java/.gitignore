@@ -1,0 +1,23 @@
+# Build output
+target/
+build/
+out/
+*.class
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.iml
+
+# Maven / Gradle
+.mvn/wrapper/maven-wrapper.jar
+.gradle/
+**/dependency-reduced-pom.xml
+
+# Secrets / local config
+config.properties
+*.env
