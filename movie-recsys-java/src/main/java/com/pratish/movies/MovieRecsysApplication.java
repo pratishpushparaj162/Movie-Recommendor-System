@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws SQLException {
-        int userId = args.length > 0 ? Integer.parseInt(args[0]) : 1; // default: user 1
+        int userId = args.length > 0 ? Integer.parseInt(args[0]) : 1; // default:user 1
         int topN = args.length > 1 ? Integer.parseInt(args[1]) : 5;
 
         RatingDAO dao = new RatingDAO();
@@ -20,7 +20,7 @@ public class App {
         var ub = new UserCF(userRatings).recommend(userId, topN);
         for (var e : ub.entrySet()) {
             System.out.printf("%-3d  %-30s  score=%.3f%n",
-                    e.getKey(), movieTitles.getOrDefault(e.getKey(), ("Movie " + e.getKey())), e.getValue());
+                    e.getKey(), movieTitles.getOrDefault(e.getKey(), ("Movie " + e.getKey())), e.getValue()) ;
         }
 
         System.out.println("\n=== Item-based CF Recommendations for user " + userId + " ===");
