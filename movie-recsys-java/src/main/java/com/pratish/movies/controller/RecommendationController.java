@@ -20,7 +20,7 @@ public class RecommendationController {
     private final RecommendationService recommendationService;
 
     /**
-     * Generate recommendations using User-based Collaborative Filtering.
+     * Generate recommendations using User based Collaborative Filtering.
      * POST /api/recommendations/user-based
      * Body: {"userId":1,"topN":5}
      */
@@ -43,3 +43,4 @@ public class RecommendationController {
         return ResponseEntity.ok(recommendationService.recommendItemBased(userId, topN));
     }
 }
+
