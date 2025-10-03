@@ -5,6 +5,6 @@ Supports **User-based CF** and **Item-based CF** with cosine similarity (Pearson
 
 ## Setup
 1. Install Java 17+ and MySQL.
-2. Create DB and seed:
+2. Create DB and seed :
    ```sql
    SOURCE src/main/resources/schema.sql;
