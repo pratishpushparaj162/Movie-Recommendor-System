@@ -22,7 +22,7 @@ public class Database {
             } else {
                 props.load(in);
             }
-        } catch (IOException e) {
+        } catch (IOException e ) {
             throw new RuntimeException("Failed to load DB config", e);
         }
 
