@@ -13,7 +13,7 @@ public class RatingDAO {
         String sql = "SELECT user_id, movie_id, rating FROM ratings";
         try (Connection conn = Database.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);
-             ResultSet rs = ps.executeQuery()) {
+             ResultSet rs = ps.executeQuery( )) {
             while (rs.next()) {
                 int u = rs.getInt("user_id");
                 int m = rs.getInt("movie_id");
