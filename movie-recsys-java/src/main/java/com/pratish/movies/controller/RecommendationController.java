@@ -32,7 +32,7 @@ public class RecommendationController {
     }
 
     /**
-     * Generate recommendations using Item-based Collaborative Filtering.
+     * Generate recommendations using Item based Collaborative Filtering.
      * POST /api/recommendations/item-based
      * Body: {"userId":1,"topN":5}
      */
@@ -43,4 +43,5 @@ public class RecommendationController {
         return ResponseEntity.ok(recommendationService.recommendItemBased(userId, topN));
     }
 }
+
 
