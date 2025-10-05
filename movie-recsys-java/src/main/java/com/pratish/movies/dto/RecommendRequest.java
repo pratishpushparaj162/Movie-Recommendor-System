@@ -7,6 +7,7 @@ import lombok.*;
  */
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class RecommendRequest {
-    private Integer userId;
-    private Integer topN; // optional; controller defaults if null/<=0
+    private Integer userId ;
+    private Integer topN ; // optional; controller defaults if null/<=0
 }
+
